@@ -5,6 +5,16 @@
     "version": "0.2.0",
     "configurations": [
 
+{
+    "type": "java",
+    "name": "Debug - GAAFootballTest",
+    "request": "launch",
+    "cwd": "${workspaceFolder}",
+    "console": "internalConsole",
+    "stopOnEntry": false,
+    "mainClass": "GAAFootballTest",
+    "args": ""
+},
         {
             "type": "java",
             "name": "Debug - LoopsSample",
