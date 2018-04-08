@@ -13,7 +13,7 @@ Let's start with a Java refresher. We'll be using Java 10, so some of the latest
 
 ### Object oriented programming language features
 Java is an OOP language and that we need to be comfortable working with *classes* which define the structure and capabilities of something we want to use and *objects*, which are an instance of a class.  
-'''java
+```java
 Dog roscoe = new Dog();
-'''
+```
 In this example, the class is **Dog** and the object is **roscoe**, a particular instance of a dog. 
