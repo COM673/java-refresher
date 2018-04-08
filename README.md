@@ -19,11 +19,32 @@ Simple variables have a type, name and value:
  Complex variables are objects (see below) that encapsulate data and methods to work with them:
  ```java
 String sentence = "The quick red fox";
-int sentenceLength = words.lenth();
+int sentenceLength = words.length();
 ```
-In this example, a *String* contains the data for the sentence, and *.length()* is a method that return the number of characters in the sentence.
+In this example, a *String* contains the data for the sentence, and *.length()* is a method that return the number of characters in the sentence.  
+Java 10 adds type inference, if you use *var* as the type, Java will attempt to infer the type for you. This is particularly useful for verbose types.  
+ ```java
+ var sentence = "This is a String type";
+ ```
 
 #### Input and Output
+Although we'll only be using print statements at the start of the course, we can print with:
+```java
+ System.out.println("print this and go onto a new line");
+ System.out.print("print this and stay on the current line");
+ ```
+ Input used to be quite knotty but luckily the Scanner class makes it much more straight forward:
+  ```java
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = input.nextLine();
+        System.out.println("What age are you " + name + "?");
+        int age = input.nextInt();
+        System.out.println("Do you like marmite? (true or false)");
+        boolean likesMarmite = input.nextBoolean();
+        System.out.printf("%s is %d years old and likes marmite: %b\n", name, age, likesMarmite);       
+        input.close();   
+  ```
 #### Selection
 #### Loops
 
