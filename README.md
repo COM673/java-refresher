@@ -26,27 +26,68 @@ Java 10 adds type inference, if you use *var* as the type, Java will attempt to 
  ```java
  var sentence = "This is a String type";
  ```
-
+#### Operators
+Operators allow you to perform operations on variables, including mathematical operations and Boolean logic operations. Remember BODMAS for evaluating complex statements with brackets:
+```java
+int a = 2;
+int b = 3;
+int c = a + b;
+int d = c - a;
+int e = d * d;
+int f = ((a * 2) * ((b + 1) / a)) / 2; // BOMDAS
+``` 
+We'll also look at comparison operators when we get to *selections* below. 
 #### Input and Output
 Although we'll only be using print statements at the start of the course, we can print with:
 ```java
  System.out.println("print this and go onto a new line");
  System.out.print("print this and stay on the current line");
  ```
- Input used to be quite knotty but luckily the Scanner class makes it much more straight forward:
-  ```java
-        Scanner input = new Scanner(System.in);
-        System.out.println("What is your name?");
-        String name = input.nextLine();
-        System.out.println("What age are you " + name + "?");
-        int age = input.nextInt();
-        System.out.println("Do you like marmite? (true or false)");
-        boolean likesMarmite = input.nextBoolean();
-        System.out.printf("%s is %d years old and likes marmite: %b\n", name, age, likesMarmite);       
-        input.close();   
-  ```
-#### Selection
+ Input used to be quite knotty but luckily the Scanner class makes it much more straightforward:  
+```java
+Scanner input = new Scanner(System.in);
+System.out.println("What is your name?");
+String name = input.nextLine();
+System.out.println("What age are you " + name + "?");
+int age = input.nextInt();
+System.out.println("Do you like marmite? (true or false)");
+boolean likesMarmite = input.nextBoolean();
+System.out.printf("%s is %d years old and likes marmite: %b\n", name, age, likesMarmite);       
+input.close();   
+```
+#### Selection  
+*if*, *if-else*, and *if-else if-else* statements are common when deciding what to do in a program. Each *execution path* should be considered when writing a selection, just because a particular path is unlikely, does not mean it will never happen.
+```java
+boolean a = true;
+boolean b = false;
+// == simple variable comparison
+// && Boolean AND
+if(a == true && b == true) {
+    System.out.println("a is true, b is true");
+}
+else if(a == false && b == false) {
+    System.out.println("a is false, b is false");
+}
+else if(a == true && b == false) {
+    System.out.println("a is true, b is false");
+}
+else if(a == false && b == true) {
+    System.out.println("a is false, b is true");
+}
+String first = "Cat";
+String second = "Dog";
+// .equals() compares the contents of the objects
+if(first.equals(second) == true) {
+    System.out.println(first + " is the same as " + second);
+}
+else {
+    System.out.println(first + " is not the same as " + second);
+}
+```
+
 #### Loops
+A loop performs a certain action a number of times until a stop condition is met.  
+We have *do-while* loops which run through the loop at least once, *while* loops that may not run through the loop at all, *for* loops which execute a set number of times and *for-each* loops which are useful for iterating over lists.
 
 ### Object oriented programming language features
 Java is an OOP language and that we need to be comfortable working with *classes* which define the structure and capabilities of something we want to use and *objects*, which are an instance of a class.  
