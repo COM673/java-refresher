@@ -1,7 +1,6 @@
 /**  COM673 java-refresher GAAFootballTest code.
 * @author  Stephen Howell (@stephen-howell)
 */
-
 class GAAFootballTest
 {
     public static void main(String[] args) {
