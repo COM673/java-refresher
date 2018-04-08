@@ -88,7 +88,31 @@ else {
 #### Loops
 A loop performs a certain action a number of times until a stop condition is met.  
 We have *do-while* loops which run through the loop at least once, *while* loops that may not run through the loop at all, *for* loops which execute a set number of times and *for-each* loops which are useful for iterating over lists.
-
+```java
+int stopVal = 100;
+int val = 200;
+do
+{
+    System.out.println(val);
+    val += val;
+}
+while(val < stopVal);
+val = 2;
+while(val < stopVal)
+{
+    System.out.println(val);
+    val *= val; // What does this operator do?
+}
+for(int i = 0; i <= 30; i+=3)
+{
+    System.out.print(i + ", ");
+}
+System.out.println();
+String[] animals = { "cat", "dog", "mouse" };
+for(var animal : animals)
+    System.out.println(animal);
+}
+```
 ### Object oriented programming language features
 Java is an OOP language and that we need to be comfortable working with *classes* which define the structure and capabilities of something we want to use and *objects*, which are an instance of a class.  
 ```java

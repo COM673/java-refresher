@@ -4,9 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        {
+            "type": "java",
+            "name": "Debug - LoopsSample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "LoopsSample",
+            "args": ""
+        },
     {
         "type": "java",
-        "name": "Debug (Launch) - SelectionSample",
+        "name": "Debug - SelectionSample",
         "request": "launch",
         "cwd": "${workspaceFolder}",
         "console": "internalConsole",
@@ -16,20 +27,13 @@
     },
         {
             "type": "java",
-            "name": "Debug (Launch)-InputOutputSample",
+            "name": "Debug - InputOutputSample",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "externalTerminal",
             "stopOnEntry": false,
             "mainClass": "InputOutputSample",
             "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Debug (Attach)",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": 0
         }
     ]
 }
