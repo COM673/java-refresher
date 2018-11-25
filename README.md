@@ -5,7 +5,6 @@ Repository for first session of COM673, focusing on Java refresher for the upcom
 ## Introduction
 In this module the focus will be on designing, developing, debugging and deploying Java apps and bots on the Azure cloud.  
 Let's start with a Java refresher. We'll be using Java 10, so some of the latest language features may be new to you.  
-   
 ### Basic language features 
 Many programming languages have variables, input and output, selection, and loops as basic features for writing programs.
 
